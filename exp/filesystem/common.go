@@ -139,7 +139,7 @@ func (s *Server) whichAccess(parsed path.Parsed) (upspin.PathName, error) {
 }
 
 // readFile returns the contents of the named file relative to the server root.
-// The file must be world-readable, or readFile returns a permissoin error.
+// The file must be world-readable, or readFile returns a permission error.
 func (s *Server) readFile(name upspin.PathName) ([]byte, error) {
 	parsed, err := path.Parse(name)
 	if err != nil {

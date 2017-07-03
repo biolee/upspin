@@ -44,7 +44,7 @@ func (s *server) whichAccess(p path.Parsed, opts ...options) (*upspin.DirEntry, 
 	}
 	// Do tree lookups until we find an Access file. Lookups start at the
 	// root and go forward till the named path. If no Access file is there,
-	// pop up one level. This is so we can find the closest Acesss file,
+	// pop up one level. This is so we can find the closest Access file,
 	// while being aware of links in the way.
 	for {
 		accPath, err := path.Parse(path.Join(p.Path(), "Access"))
