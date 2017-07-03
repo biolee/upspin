@@ -23,7 +23,7 @@ It takes a single value that can be:
 	- a local TCP port (e.g. localhost:9999) to specify a particular port
 
 The cacheserver will be started automatically by the upspin command or upspinfs if it is
-not already running, and continues to run once the program that started it
+not already running, and continues to run after the program that started it
 has exited.
 
 Usage:
